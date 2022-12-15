@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 824366667462-1a0rjsap90jepscm7njmbc7jsi4ttv8u.apps.googleusercontent.com
+            client-secret: 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
+  datasource:
+    url: jdbc:postgresql://localhost:5432/outh2_me
+    username: outh2_me
+    password: 25293
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+    hibernate:
+      ddl-auto: update
